@@ -20,10 +20,6 @@ The Shiny Booster module enhances the likelihood of encountering shiny Pokémon 
 
 The IV Booster module gives spawning Pokémon guaranteed perfect IVs based on the highest of a nearby player’s points. With the default `ivBoost.json5`, a capture streak of 5+ gives 1, 10+ gives 2, 20+ gives 3, and 30+ gives 4.
 
-### Synchronized Natures
-
-The Synchronized Natures module is a little different; it requires that a nearby player have a Pokémon with the Synchronize ability - optionally in the first slot of their party - in order to influence a nearby spawning Pokémon’s nature. This follows the rules of the out-of-battle effect of Synchronize in the main game. Points are only considered when multiple eligible players are nearby. When choosing a player from the list of eligible players, each player has one chance for every point they have.
-
 ### Points
 
 Each module comes with its own config. The first few properties allow you to specify the amount of points awarded for KOs, KO Streaks, captures, and capture streaks. For example, the default config for the IV Booster gives awards 0 points for all but capture streaks, which award 1 point towards the threshold. This means that for each capture in your current capture streak, you will be awarded 1 point towards the threshold.
