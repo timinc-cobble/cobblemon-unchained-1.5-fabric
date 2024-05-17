@@ -13,7 +13,6 @@ class HiddenAbilityBooster(override val player: ServerPlayerEntity, override val
         val totalMarbles = config.marbles
         val speciesData = action.props.species?.let { PokemonSpecies.getByName(it) } ?: return
         val ability = speciesData.abilities.mapping[Priority.LOW]?.first()?.template?.name
-        println("$species : $ability")
 
         if (ability == null) {
             info("conclusion: species doesn't have hidden ability")
